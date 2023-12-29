@@ -60,6 +60,8 @@ function renderBars(array) {
     let bar = document.createElement("div");
     bar.classList.add("bar");
     bar.style.height = array[i] * heightFactor + "px";
+    // bar.innerText = array[i];
+  
     bars_container.appendChild(bar);
   }
 }
@@ -137,7 +139,7 @@ async function partition(items, left, right) {
       j--;
     }
     if (i <= j) {
-      await swap(items, i, j, bars); //sawpping two elements
+      await swap(items, i, j, bars); //swapping two elements
       i++;
       j--;
     }
@@ -254,8 +256,8 @@ async function swap(array, i, j, bars) {
       bars[k].style.backgroundColor = "goldenrod";
     }
   }
-  //bars[i].innerText = array[i];
-  //bars[j].innerText = array[j];
+  // bars[i].innerText = array[i];
+  // bars[j].innerText = array[j];
   return array;
 }
 
