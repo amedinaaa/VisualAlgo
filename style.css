@@ -18,6 +18,7 @@
 }
 
 .bars_container{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -50,6 +51,7 @@ h1.header{
     cursor: pointer;
     text-align: center;
     transition:  0.2s ease-in-out;
+    margin-bottom: 60px;
 }
 
 button:hover{
